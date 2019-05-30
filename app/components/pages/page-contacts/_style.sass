@@ -1,0 +1,136 @@
+.map
+  height: 719px
+  width: 100%
+  position: relative
+  margin: 44px 0 171px
+  display: flex
+  flex-wrap: wrap
+  .box-contacts
+    margin: 51px 0 0 98px
+    width: 100%
+    position: relative
+    z-index: 3
+    li
+      color: #fff
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+      margin: 0 0 12px
+      font-size: 18px
+      font-weight: 600
+      .phone
+        font-size: 18px
+        padding: 0 16px 0 0
+        margin: 0 10px 0 0
+        &:nth-child(3)
+          padding: 0
+          margin: 0
+          &:before
+            display: none
+        &:before
+          content: '/'
+          position: absolute
+          right: 0
+          top: 0
+      a
+        color: #fff
+        position: relative
+        &:hover
+          color: $accent
+      .icon
+        margin: 0 13px 0 0
+        border-radius: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 24px
+        height: 24px
+        min-width: 24px
+        background-color: #ffffff
+        color: $accent
+        font-size: 14px
+
+
+.box-callback
+  position: relative
+  z-index: 3
+  margin: 0 auto -93px
+  background: #fff
+  max-width: 949px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  box-shadow: 0 4px 13px rgba(0, 0, 0, 0.06)
+  box-sizing: border-box
+  padding: 48px 47px 47px 49px
+  h2
+    font-size: 28px
+    span
+      font-size: 28px
+  form
+    display: flex
+    flex-wrap: wrap
+    width: 494px
+    padding: 0 46px 0 0
+    box-sizing: border-box
+    border:
+      right: 1px solid #eaeaea
+    label
+      width: 100%
+      margin: 25px 0 0 0
+      input
+        color: #a1a1a1
+        font-size: 14px
+        border-color:  #a1a1a1
+        &::placeholder
+          color: #a1a1a1
+    .radio
+      margin: 60px 0 30px 0
+      max-width: 340px
+  .box-callback-info
+    display: flex
+    flex-direction: column
+    padding: 0 0 0 42px
+    box-sizing: border-box
+    .phone
+      font-size: 26px
+      font-weight: 600
+      color: $title
+      letter-spacing: 0.52px
+    p
+      margin: 19px 0 39px
+      font-size: 18px
+      color: #353236
+      letter-spacing: 0.36px
+    .mail
+      color: $mail
+      text-decoration: underline
+      font-size: 23px
+      font-weight: 600
+
+
+
+
+#map
+  width: 100%
+  height: 100%
+  position: absolute
+  left: 0
+  top: 0
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.41)
+    z-index: 2
+
+
+[class*="ymaps-2"][class*="-ground-pane"]
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale")
+  /* Firefox 3.5+
+  -webkit-filter: grayscale(100%)
+/* Chrome 19+ & Safari 6+

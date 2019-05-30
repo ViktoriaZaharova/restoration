@@ -1,0 +1,156 @@
+.section-about__content
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 44px 0 0 0
+  width: 100%
+
+.description-company
+  max-width: 416px
+  color: $title
+  font-size: 14px
+  line-height: 22px
+  p
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
+
+.company-document
+  padding: 155px 0
+  .container
+    justify-content: space-between
+  .box-left
+    max-width: 522px
+    h2
+      font-size: 32px
+      span
+        font-size: 32px
+        display: inline
+    .text
+      color: $title
+      font-size: 14px
+      line-height: 22px
+      margin: 52px 0 0 0
+      p
+        margin: 0 0 30px
+        &:last-child
+          margin: 0
+
+.company-document-slider
+  //padding: 10px
+  margin: 0 80px 0 0
+  box-sizing: border-box
+  width: 384px
+  box-shadow: 0 4px 10px rgba(4, 28, 52, 0.33)
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    transform: translate(-50%,0)
+    bottom: -11px
+    width: 352px
+    height: 500px
+    box-shadow: 0 1px 11px rgba(4, 28, 52, 0.33)
+    background-color: #d9d9d9
+    z-index: 0
+  &:after
+    content: ''
+    position: absolute
+    left: 50%
+    transform: translate(-50%,0)
+    box-shadow: 0 6px 14px rgba(4, 28, 52, 0.33)
+    width: 331px
+    height: 468px
+    background-color: #d9d9d9
+    bottom: -24px
+    z-index: -2
+  .slide
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto
+    z-index: 3
+    position: relative
+    .certificate-img
+      margin: 0 auto
+      width: 384px
+      position: relative
+      display: flex
+      align-items: center
+      justify-content: center
+      //padding: 0 5px 24px
+      box-sizing: border-box
+      img
+        position: relative
+        width: 100%
+
+
+
+
+
+.company-document__navigation
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  position: relative
+  .slick-dots
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    bottom: 0
+    top: 0
+    margin: 36px 0
+    li
+      margin: 3px 0
+      width: 11px
+      height: 11px
+      border-color: $bg
+    li.slick-active
+      width: 7px
+      height: 7px
+      border-color: $bg
+      background: $bg
+  .slick-arrow
+    position: relative
+    transform: translate(0)
+    top: 0
+    left: 0
+    right: 0
+    width: 16px
+    height: 9px
+
+    &:before
+      color: #10294b
+      font-size: 23px
+  .slick-prev
+    &:before
+      content: '\f106'
+  .slick-next
+    order: 1
+    &:before
+      content: '\f106'
+
+.warranty-content
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 49px 0 0 0
+
+.warranty-box
+  width: 354px
+  background: rgba(#c9ccd9, .2)
+  padding: 45px 24px 40px 29px
+  box-sizing: border-box
+  //min-height: 529px
+  margin: 0 0 78px
+  h4
+    font-weight: 600
+    margin: 20px 0
+    font-size: 20px
+    min-height: 72px
